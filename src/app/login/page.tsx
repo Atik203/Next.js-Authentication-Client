@@ -94,7 +94,7 @@ const LoginPage = () => {
             <button
               onClick={() =>
                 signIn("google", {
-                  callbackUrl: "http://localhost:3000/dashboard",
+                  callbackUrl: `${process.env.BACKEND_URL}/dashboard`,
                 })
               }
               className="btn btn-circle "
@@ -109,7 +109,7 @@ const LoginPage = () => {
             <button
               onClick={() =>
                 signIn("github", {
-                  callbackUrl: "http://localhost:3000/dashboard",
+                  callbackUrl: `${process.env.BACKEND_URL}/dashboard`,
                 })
               }
               className="btn btn-circle"
